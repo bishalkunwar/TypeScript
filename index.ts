@@ -7,9 +7,9 @@ console.log(myString);
 
 
 // variables declaration in TS.
-var namee: string = "Bishal";
+const namee: string = "Bishal";
 var salary: number = 1234;
-var married: boolean = false;
+let married: boolean = false;
 var hours: number[]= [23, 34, 56];
 var friends: string[] = ["Bishal", "Suzan"];
 var mixed: (number|string)[] = ["bishal", 1, "ram", 2]
