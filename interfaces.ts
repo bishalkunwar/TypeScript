@@ -59,3 +59,35 @@ function printInfo(key:string, value?:string): void{
 
 const newFunc: ForFunc = printInfo;
 newFunc("Interface example", "function example");
+
+
+// Example of as a whole typescript interface.
+interface ForFunc{
+    (key:string, value?:string):void;
+};
+
+function LetsPrint(key:string, value?:string):void{
+    console.log(`${key} for ${value}`);
+};
+
+let NewForFunc: ForFunc = LetsPrint;
+NewForFunc("Interface Example 1", "Function Example 1");
+
+
+// Interface for class
+interface ForClass{
+    readonly var1: string;
+};
+
+interface ForList extends ForClass{
+    var2: string;
+    var3: string;
+};
+
+let newClass: ForList = {
+    var1: "Interface readonly example",
+    var2: "value extension",
+    var3: "value extension"
+};
+
+console.log(newClass);
