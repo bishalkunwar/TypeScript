@@ -16,3 +16,6 @@ function display( obj: {
 };
 
 display(employeeDetails);
+
+
+// passing objects as function paramaters in TS
