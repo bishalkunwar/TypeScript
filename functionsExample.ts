@@ -69,3 +69,29 @@ function greet(...args:any[]):string{
 console.log(greet("hello"));
 console.log(greet("bishal", "kunwar", 23));
 
+
+// example of arrow functions in TS
+let user_details = (rollNum:number, name: string, scores: number[]):string=>{
+    let userDetails = `${rollNum} - ${name} - ${scores}`;
+    return userDetails;
+};
+
+console.log(user_details(1, "ABC", [10 , 20 , 30])); 
+
+
+// ...args constructos init example in TS.
+class LetsDo {
+    args: any[];
+
+    constructor(...args: any[]) {
+        this.args = args;
+    }
+
+    letsAdd(...args: any[]): string {
+        return "hello " + args.join(" ");
+    }
+}
+
+let object1 = new LetsDo();
+console.log(object1.letsAdd("bisha;", "kunwar")); 
+
