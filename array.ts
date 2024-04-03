@@ -12,4 +12,37 @@ console.log(fruitsName);
 
 for(let x = 0; x<=fruitsName.length-1;x++){
     console.log(fruitsName[x]+"   ops");
+};
+
+
+// example of multi dimensional array\
+let friendsName:any[][] = [[1, "bishal"], [2, "suzan"], [3, "myself"]];
+
+// for(let x=0; x<=friendsName.length-1; x++){
+//     console.log(friendsName[x]);
+// }
+
+for(let x=0; x<=friendsName.length-1; x++){
+    for(let y = 0; y<=friendsName[x].length-1; y++){
+        console.log(friendsName[x][y]);
+    }
 }
+
+
+// array push method
+let array1 = [1,2,3];
+array1.push(6);
+
+console.log(array1);
+
+
+// array slice
+let array2 = [2,3,4,5,6];
+let arraySliced = array2.slice(2,4);
+console.log(arraySliced);
+
+
+// array splice
+let array3 = [4,5,6,7,8];
+let arraySpliced = array3.splice(2,2,12,13);
+console.log(arraySpliced);
