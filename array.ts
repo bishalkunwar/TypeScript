@@ -46,3 +46,9 @@ console.log(arraySliced);
 let array3 = [4,5,6,7,8];
 let arraySpliced = array3.splice(2,2,12,13);
 console.log(arraySpliced);
+
+
+// array reversal
+for(let z=array3.length;z>=0;z--){
+    console.log(array3[z]);
+}
